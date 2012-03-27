@@ -1,0 +1,14 @@
+/* Resets */
+.dropdownify * { margin: 0; padding: 0; }
+
+
+.dropdownify { }
+.dropdownify .selected { font-weight:normal; padding: 4px; border: 1px solid #666; border-radius: 4px; background: #eee; cursor: pointer; position: relative; }
+.dropdownify .selected:after { content: '';
+    position: absolute; top: 11px; right: 6px;
+    border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #444;
+}
+.dropdownify ul { display: none; list-style-type: none; border: 1px solid #666; border-radius: 4px; background: #eee; margin-top: 6px; position: absolute; z-index: 99; }
+.dropdownify ul li a { display: block; text-decoration: none; color: black; font-weight: normal; padding: 2px 6px; }
+.dropdownify ul li.active a { font-weight: bold; }
+.dropdownify ul li:hover a { background-color: #009; color: white; }

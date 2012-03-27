@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dropdown Demo</title>
+    <link rel="stylesheet" href="../css/dropdownify.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="../dropdownify.js"></script>
+
+    <style>
+        .selectionBox { width: 300px; padding: 20px; background: #dad; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Demo</h1>
+
+    <div class="selectionBox">
+
+        <p>Please select country</p>
+        <ul class="linklist">
+            <li><a href="">-- World --</a></li>
+            <li><a href="?country=ch">Schweiz</a></li>
+            <li><a href="?country=it">Italia</a></li>
+            <li><a href="?country=at">Österreich</a></li>
+            <li><a href="?country=pl">Polska</a></li>
+            <li><a href="?country=de">Deutschland</a></li>
+            <li><a href="?country=fr">France</a></li>
+        </ul>
+
+    </div>
+
+    <div class="selectionBox">
+
+        <p>Please choose color</p>
+        <ul class="linklist">
+            <li><a href="">-- Transparent --</a></li>
+            <li><a href="?color=1">Blue</a></li>
+            <li><a href="?color=2">Brown</a></li>
+            <li><a href="?color=3">Yellow</a></li>
+            <li class="active"><a href="?color=4">Green</a></li>
+            <li><a href="?color=5">Black</a></li>
+            <li><a href="?color=6">White</a></li>
+            <li><a href="?color=7">Red</a></li>
+            <li><a href="?color=8">Cyan</a></li>
+            <li><a href="?color=9">Magenta</a></li>
+            <li><a href="?color=10">Orange</a></li>
+        </ul>
+
+    </div>
+
+
+    <script>
+        $('.linklist').dropdownify();
+    </script>
+</body>
+</html>
